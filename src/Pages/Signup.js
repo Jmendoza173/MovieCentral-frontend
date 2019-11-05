@@ -18,9 +18,9 @@ const Signup = props => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log('looking into props', props)
+    // console.log('looking into props', props)
     const { history } = props;
-    console.log('sign up',signupForm)
+    // console.log('sign up',signupForm)
     if (!!dispatch(userActions.newUserToDB(signupForm)))
         history.push('/')
   }

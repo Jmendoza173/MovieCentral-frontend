@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 const url = "https://image.tmdb.org/t/p/w1280"
 
-const MovieCard = ({movie}) => {
+const MovieCard = ({movie,toList}) => {
 
     const [movieInfo, setMovieInfo] = useState(null)
     useEffect(() => {
@@ -12,7 +12,7 @@ const MovieCard = ({movie}) => {
     }, [movie.id]);
     
     const overview = movieInfo ? movieInfo.overview.split(".") : []
-    console.log(movieInfo)
+    // console.log(movieInfo)
     return (
         <div id="card">
             <div id="poster"><img src={`${url}${movie.poster_path}`} alt="" height="250px"/></div>
@@ -22,7 +22,7 @@ const MovieCard = ({movie}) => {
                 <button>View More Information</button>
             </div>
             <div id="button">
-                <button>Add to List</button>
+                <button onClick={()=>toList()}>Add to List</button>
                 <button>Favorite</button>
                 <button>To Watch</button>
                 <button>Rate Movie</button>

@@ -1,13 +1,13 @@
 import React from 'react'
 import MovieCard from './MovieCard';
 
-const MovieList = ({moviesNow}) => {
+const MovieList = ({moviesNow, toList}) => {
 
     const renderMovie = () => {
         if(moviesNow){
             return moviesNow.map(movie => {
-            console.log("render",movie)
-            return <MovieCard movie={movie} key={movie.title}/>})
+            // console.log("render",movie)
+            return <MovieCard movie={movie} key={movie.title} toList={toList}/>})
         }
     }
     return (<>

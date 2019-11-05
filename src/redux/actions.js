@@ -31,7 +31,7 @@ const setUserAction = userObj => ({
   // Fetch
   
   const newUserToDB = userObj => dispatch => {
-    console.log("newUserToDB",userObj)
+    // console.log("newUserToDB",userObj)
     const config = {
       method: 'POST',
       headers: {
@@ -42,7 +42,7 @@ const setUserAction = userObj => ({
     fetch(USERS_URL, config)
       .then(r => r.json())
       .then(data => {
-        console.log("After fetching",data)
+        // console.log("After fetching",data)
         dispatch(setUserAction(data.username));
         localStorage.setItem('token', data.token);
         localStorage.setItem('loggedInUserId', data.user_id);
@@ -70,7 +70,7 @@ const setUserAction = userObj => ({
   };
   
   const loginUserToDB = userCredentials => dispatch => {
-      console.log(userCredentials)
+      // console.log(userCredentials)
     const config = {
       method: 'POST',
       headers: {
@@ -81,7 +81,7 @@ const setUserAction = userObj => ({
     fetch(LOGIN_URL, config)
       .then(r => r.json())
       .then(data => {
-          console.log("fetch info",data)
+          // console.log("fetch info",data)
           dispatch(setUserAction(data.username));
           localStorage.setItem('token', data.token);
           localStorage.setItem('loggedInUserId', data.user_id);

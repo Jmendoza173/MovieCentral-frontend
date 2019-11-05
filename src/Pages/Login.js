@@ -13,7 +13,7 @@ const LoginPage = props => {
 
   const handleSubmit = e => {
       e.preventDefault();
-      console.log("info being send",loginForm)
+      // console.log("info being send",loginForm)
     dispatch(userActions.loginUserToDB(loginForm));
     props.history.push('/');
   };
