@@ -1,22 +1,36 @@
-.App {
-  text-align: center;
+#poster{
+    /* float: left; */
+    width: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
+#info{
+    /* float: left; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#button{
+    /* float: left; */
 }
 
-.App-link {
-  color: #09d3ac;
+#card{
+    display: inline-table;
+    width: 40%
+}
+
+#moviesNow{
+    /* border: 1px solid black;
+    height: 75vh;
+    width: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 10px; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+#overview{
+    font-size: 15px;
 }
