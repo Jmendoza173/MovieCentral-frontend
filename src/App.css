@@ -35,3 +35,65 @@ body{
 #overview{
     font-size: 15px;
 }
+
+.searchBar{
+    width: 98%;
+    /* margin-left: auto; */
+    margin-left: 10px;
+}
+
+details {
+    font: 16px "Open Sans", "Arial", sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  details > summary {
+    padding: 3px 6px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    list-style: none;
+  }
+  
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  #listDelete{
+      float: right;
+      margin-top: 5px;
+  }
+
+  #title{
+      font-weight: bold;
+      font-size: 25px;
+  }
+
+  #adjust{
+    margin-top: 15px;
+    width: 28vh;
+    height: 44vh;
+  }
+  #pop{
+    height: 68vh;
+  }
+  #popList{
+      margin-top: 10px;
+      height: 58vh;
+      overflow-x: auto;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      grid-gap: 10px;
+      padding-left: 5px;
+      grid-auto-flow: column;
+  }
+
+  #popImg{
+      margin-left: 10px;
+      margin-top: 20px;
+  }
+
+  #h2disc{
+      text-align: center;
+  }

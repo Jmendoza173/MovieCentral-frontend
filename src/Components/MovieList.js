@@ -7,7 +7,7 @@ const MovieList = ({moviesNow, toList}) => {
         if(moviesNow){
             return moviesNow.map(movie => {
             // console.log("render",movie)
-            return <MovieCard movie={movie} key={movie.title} toList={toList}/>})
+            return <MovieCard movie={movie.id} key={movie.title} />})
         }
     }
     return (<>

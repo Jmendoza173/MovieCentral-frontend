@@ -15,7 +15,7 @@ const MovieNowContainer = ({toList}) => {
 
     return (
         <div>
-            <MovieList moviesNow = {moviesNow} toList={toList}/>
+            <MovieList moviesNow = {moviesNow} />
         </div>
     )
 }
